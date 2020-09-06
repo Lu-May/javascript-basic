@@ -1,10 +1,10 @@
 describe('for array', () => {
-  it('should get element of an array', () => {
+  fit('should get element of an array', () => {
     const array = [1, 2, 3, 4, 5];
 
     // <--start
     // Please write down the correct result. You should write the result directly.
-    const expected = undefined;
+    const expected = 3;
     // --end->
 
     expect(array[2]).toEqual(expected);
