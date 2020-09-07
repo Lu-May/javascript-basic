@@ -70,7 +70,7 @@ describe('for array', () => {
     expect(mapped).toEqual(expected);
   });
 
-  fit('should summarize with reduce', () => {
+  it('should summarize with reduce', () => {
     const numbers = [1, 2, 3, 4, 5];
     const reduced = numbers.reduce((prev, current) => prev + current);
 
