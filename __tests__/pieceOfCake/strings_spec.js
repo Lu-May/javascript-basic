@@ -71,7 +71,7 @@ describe('for strings', () => {
     expect(splitted).toEqual(expected);
   });
 
-  fit('should join strings', () => {
+  it('should join strings', () => {
     const splitted = ['what', 'a', 'beautiful', 'day'];
 
     // <--start
@@ -87,7 +87,7 @@ describe('for strings', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 4;
     // --end->
 
     expect(emoji.length).toEqual(expected);
