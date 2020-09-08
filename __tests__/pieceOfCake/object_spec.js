@@ -1,5 +1,5 @@
 describe('for object', () => {
-  fit('should access property via dot or bracket', () => {
+  it('should access property via dot or bracket', () => {
     const person = { name: 'Bob' };
 
     // <--start
@@ -12,12 +12,12 @@ describe('for object', () => {
     expect(person['name']).toEqual(expectedName);
   });
 
-  it('should get undefined if property is not defined', () => {
+  fit('should get undefined if property is not defined', () => {
     const person = { name: 'Bob' };
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = {};
+    const expected = undefined;
     // --end->
 
     expect(person.whatTheHellIsThat).toEqual(expected);
