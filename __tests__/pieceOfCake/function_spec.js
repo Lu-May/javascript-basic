@@ -259,7 +259,7 @@ describe('for function', () => {
     expect(greaterThan10(3)).toEqual(expected);
   });
 
-  fit('should not make you crazy with high order function', () => {
+  it('should not make you crazy with high order function', () => {
     function noisy(f) {
       return (...args) => f(...args);
     }
@@ -289,7 +289,7 @@ describe('for function', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = [0, 2, 4];
     // --end->
 
     expect(logs).toEqual(expected);
