@@ -130,7 +130,7 @@ describe('for object', () => {
     expect(rabbit.speak('Hello')).toEqual(expected);
   });
 
-  fit('should capture this in the scope around it for arrow function', () => {
+  it('should capture this in the scope around it for arrow function', () => {
     function normalize() {
       return this.coords.map(n => n / this.length);
     }
@@ -145,12 +145,12 @@ describe('for object', () => {
     expect(actual).toEqual(expected);
   });
 
-  it('should get object prototype for an object', () => {
+  fit('should get object prototype for an object', () => {
     const emptyObject = {};
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = Object.prototype;
     // --end->
 
     expect(Object.getPrototypeOf(emptyObject)).toBe(expected);
