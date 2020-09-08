@@ -145,7 +145,7 @@ describe('for object', () => {
     expect(actual).toEqual(expected);
   });
 
-  fit('should get object prototype for an object', () => {
+  it('should get object prototype for an object', () => {
     const emptyObject = {};
 
     // <--start
@@ -156,12 +156,12 @@ describe('for object', () => {
     expect(Object.getPrototypeOf(emptyObject)).toBe(expected);
   });
 
-  it('should get null for object prototype\'s prototype', () => {
+  fit('should get null for object prototype\'s prototype', () => {
     const objectPrototype = Object.prototype;
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = null;
     // --end->
 
     expect(Object.getPrototypeOf(objectPrototype)).toEqual(expected);
