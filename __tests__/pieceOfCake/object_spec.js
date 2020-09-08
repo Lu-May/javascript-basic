@@ -34,7 +34,7 @@ describe('for object', () => {
     expect(person.name).toBeUndefined();
   });
 
-  fit('should be able to find all the keys', () => {
+  it('should be able to find all the keys', () => {
     const person = {
       name: 'Bob', yearOfBirth: 2019,
     };
@@ -47,7 +47,7 @@ describe('for object', () => {
     expect(Object.keys(person)).toEqual(expected);
   });
 
-  it('should create object with braces expression', () => {
+  fit('should create object with braces expression', () => {
     const person = {
       name: 'Bob',
       // eslint-disable-next-line object-shorthand, func-names
@@ -58,7 +58,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'Hello, I am John';
     // --end->
 
     expect(person.greeting()).toEqual(expected);
