@@ -12,7 +12,7 @@ describe('for object', () => {
     expect(person['name']).toEqual(expectedName);
   });
 
-  fit('should get undefined if property is not defined', () => {
+  it('should get undefined if property is not defined', () => {
     const person = { name: 'Bob' };
 
     // <--start
@@ -23,12 +23,12 @@ describe('for object', () => {
     expect(person.whatTheHellIsThat).toEqual(expected);
   });
 
-  it('should remove object property using delete operator', () => {
+  fit('should remove object property using delete operator', () => {
     const person = { name: 'Bob' };
 
     // <--start
     // Please write a line of code to remove the `name` property.
-
+    delete person.name;
     // --end->
 
     expect(person.name).toBeUndefined();
