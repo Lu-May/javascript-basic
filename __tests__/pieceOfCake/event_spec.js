@@ -22,7 +22,7 @@ describe('for event', () => {
     element.emit('click');
   }, 1000 /* 1 second to timeout */);
 
-  fit('should invoke multiple times', (done) => {
+  it('should invoke multiple times', (done) => {
     const element = new EventEmitter();
     const logs = [];
 
@@ -57,7 +57,7 @@ describe('for event', () => {
       .then(() => {
         // <--start
         // Please write down the correct value. You should write the final result directly.
-        const expected = undefined;
+        const expected = ['I have been clicked'];
         // --end->
 
         expect(logs).toEqual(expected);
