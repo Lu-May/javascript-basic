@@ -184,7 +184,7 @@ describe('for object', () => {
     expect(words).toEqual(expected);
   });
 
-  fit('should simulate constructor using function, and use function\'s prototype as definition', () => {
+  it('should simulate constructor using function, and use function\'s prototype as definition', () => {
     function Rabbit(type) { this.type = type; }
     // eslint-disable-next-line func-names
     Rabbit.prototype.speak = function (line) { return `The ${this.type} rabbit says ${line}.`; };
@@ -217,7 +217,7 @@ describe('for object', () => {
     expect(prototypeOfRabbitFunction).toBe(expectedPrototypeOfRabbitFunction);
   });
 
-  it('should use the class notation rather than the awkward function', () => {
+  fit('should use the class notation rather than the awkward function', () => {
     class Rabbit {
       constructor(type) { this.type = type; }
 
@@ -228,7 +228,7 @@ describe('for object', () => {
 
     // <--start
     // Please write down the correct value. You should write the final result directly.
-    const expected = undefined;
+    const expected = 'The white rabbit says Hi.';
     // --end->
 
     expect(rabbit.speak('Hi')).toEqual(expected);
